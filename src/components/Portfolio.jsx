@@ -4,13 +4,14 @@ import React from 'react';
 const projects = [
   {
     title: "Portfolio Website",
-    image: "img/port1.jpg",
+    tech: "React, CSS",
+    image: "img/port1.png",
     github: "https://github.com/demo-user/portfolio",
     live: "https://portfolio-demo.vercel.app",
   },
   {
-    title: "Weather App",
-    image: "img/port2.jpg",
+    title: "College website",
+    image: "img/port2.png",
     github: "https://github.com/demo-user/weather-app",
     live: "https://weather-demo.netlify.app",
   },
@@ -48,6 +49,7 @@ const Portfolio = () => {
             </div>
             <div className="hover-items">
               <h3>{project.title}</h3>
+              <p>{project.tech}</p>
               <div className="icons">
                 <a
                   href={project.github}
