@@ -62,16 +62,13 @@ const Contact = () => {
             </div>
             <div className="contact-icons">
               <div className="contact-icon">
-                <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
                 <a href="https://twitter.com" target="_blank" rel="noreferrer">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="https://github.com" target="_blank" rel="noreferrer">
+                <a href="https://github.com/rehanmujawarofficial" target="_blank" rel="noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/r_k_thunder_007/" target="_blank" rel="noreferrer">
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>

@@ -17,14 +17,14 @@ const projects = [
     live: "",
   },
   {
-    title: "To-Do List",
+    title: "Atendance Management System",
     image: "img/port3.jpg",
     tech: "coming soon",
     github: "",
     live: "",
   },
   {
-    title: "Blog CMS",
+    title: "AI Persnol Assistant",
     image: "img/port4.jpg",
     tech: "coming soon",
     github: "",
