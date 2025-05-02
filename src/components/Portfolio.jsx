@@ -6,26 +6,29 @@ const projects = [
     title: "Portfolio Website",
     tech: "React, CSS",
     image: "img/port1.png",
-    github: "https://github.com/demo-user/portfolio",
-    live: "https://portfolio-demo.vercel.app",
+    github: "https://github.com/rehanmujawarofficial/my-portfolio/tree/main",
+    live: "https://rehan07.netlify.app/",
   },
   {
     title: "College website",
+    tech: "coming soon",
     image: "img/port2.jpg",
-    github: "https://github.com/demo-user/weather-app",
-    live: "https://weather-demo.netlify.app",
+    github: "",
+    live: "",
   },
   {
     title: "To-Do List",
     image: "img/port3.jpg",
-    github: "https://github.com/demo-user/todo-app",
-    live: "https://todo-demo.vercel.app",
+    tech: "coming soon",
+    github: "",
+    live: "",
   },
   {
     title: "Blog CMS",
     image: "img/port4.jpg",
-    github: "https://github.com/demo-user/blog-cms",
-    live: "https://blog-demo.netlify.app",
+    tech: "coming soon",
+    github: "",
+    live: "",
   }
 ];
 
