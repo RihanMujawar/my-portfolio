@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "College website",
-    image: "img/port2.png",
+    image: "img/port2.jpg",
     github: "https://github.com/demo-user/weather-app",
     live: "https://weather-demo.netlify.app",
   },
