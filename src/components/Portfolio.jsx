@@ -12,7 +12,7 @@ const projects = [
   {
     title: "College website",
     tech: "HTML/CSS/JS",
-    image: "img/por1.png",
+    image: "img/pro1.png",
     github: "https://github.com/rehanmujawarofficial/College-website-frontend",
   },
   {
