@@ -11,10 +11,9 @@ const projects = [
   },
   {
     title: "College website",
-    tech: "coming soon",
+    tech: "HTML/CSS/JS",
     image: "img/port2.jpg",
-    github: "",
-    live: "",
+    github: "https://github.com/rehanmujawarofficial/College-website-frontend",
   },
   {
     title: "Atendance Management System",
