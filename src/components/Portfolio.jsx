@@ -24,8 +24,8 @@ const projects = [
   },
   {
     title: "AI Persnol Assistant",
-    image: "img/port4.jpg",
-    tech: "coming soon",
+    image: "img/port4.png",
+    tech: "python,gemini API",
     github: "https://github.com/rehanmujawarofficial/personal-AI-assistant",
     live: "https://github.com/rehanmujawarofficial/personal-AI-assistant",
   }
