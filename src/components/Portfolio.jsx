@@ -16,18 +16,18 @@ const projects = [
     github: "https://github.com/rehanmujawarofficial/College-website-frontend",
   },
   {
-    title: "Atendance Management System",
-    image: "img/port3.jpg",
-    tech: "coming soon",
-    github: "",
-    live: "",
+    title: "My AI 007",
+    image: "img/port3.png",
+    tech: "React, CSS,gemini API",
+    github: "https://github.com/rehanmujawarofficial/AI007/",
+    live: "https://myai007.netlify.app/",
   },
   {
     title: "AI Persnol Assistant",
     image: "img/port4.jpg",
     tech: "coming soon",
-    github: "",
-    live: "",
+    github: "https://github.com/rehanmujawarofficial/personal-AI-assistant",
+    live: "https://github.com/rehanmujawarofficial/personal-AI-assistant",
   }
 ];
 
