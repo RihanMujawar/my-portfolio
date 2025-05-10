@@ -339,9 +339,6 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
   width: 45%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .kotlin {
-  width: 40%;
-}
 .about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
   width: 45%;
 }

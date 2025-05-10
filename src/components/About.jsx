@@ -49,7 +49,6 @@ const About = () => {
             { skill: 'Java', percent: '65%', className: 'java' },
             { skill: 'MySQL', percent: '60%', className: 'mysql' },
             { skill: 'NodeJS', percent: 'learning', className: 'node' },
-            { skill: 'Kotlin', percent: 'learning', className: 'kotlin' },
             { skill: 'MongoDB', percent: 'learning', className: 'mongodb' },
           ].map((item, index) => (
             <div className="progress-bar" key={index}>
