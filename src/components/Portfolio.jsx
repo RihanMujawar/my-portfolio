@@ -29,6 +29,13 @@ const projects = [
     github: "https://github.com/rehanmujawarofficial/personal-AI-assistant",
     live: "https://github.com/rehanmujawarofficial/personal-AI-assistant",
   }
+    {
+    title: "Realtime cloud game",
+    image: "img/port5.png",
+    tech: "HTML,CSS,JS,Firebase",
+    github: "https://github.com/rehanmujawarofficial",
+    live: "https://flythebird.netlify.app/",
+  }
 ];
 
 const Portfolio = () => {
