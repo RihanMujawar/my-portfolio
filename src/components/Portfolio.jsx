@@ -33,7 +33,7 @@ const projects = [
     title: "Realtime cloud game",
     image: "img/port5.png",
     tech: "HTML,CSS,JS,Firebase",
-    github: "https://github.com/rehanmujawarofficial",
+    github: "https://github.com/rehanmujawarofficial/Flythebird",
     live: "https://flythebird.netlify.app/",
   },
 ];
