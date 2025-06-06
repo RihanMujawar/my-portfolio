@@ -36,6 +36,12 @@ const projects = [
     github: "https://github.com/rehanmujawarofficial/Flythebird",
     live: "https://flythebird.netlify.app/",
   },
+    title: "My AI 007",
+    image: "img/port3.png",
+    tech: "React, CSS,gemini API",
+    github: "https://github.com/rehanmujawarofficial",
+    live: "https://gypsum1.netlify.app/",
+  },
 ];
 
 const Portfolio = () => {
