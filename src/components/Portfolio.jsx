@@ -36,7 +36,8 @@ const projects = [
     github: "https://github.com/rehanmujawarofficial/Flythebird",
     live: "https://flythebird.netlify.app/",
   },
-    title: "My AI 007",
+  {
+    title: "pop works site",
     image: "img/phase6.png",
     tech: "HTML,CSS,JS",
     github: "https://github.com/rehanmujawarofficial",
