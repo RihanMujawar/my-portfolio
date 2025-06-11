@@ -8,7 +8,7 @@ const Header = () => {
         <div className="left-header">
           <div className="h-shape"></div>
           <div className="image">
-            <img src="img/hero.png" alt="hero" />
+            <img src="img/file_00000000e43061f68d8409493fd50e7a.png" alt="hero" />
           </div>
         </div>
         <div className="right-header">
