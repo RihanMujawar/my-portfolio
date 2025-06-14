@@ -43,6 +43,13 @@ const projects = [
     github: "https://github.com/rehanmujawarofficial",
     live: "https://gypsum1.netlify.app/",
   },
+  {
+    title: "pop works site",
+    image: "img/phase6.png",
+    tech: "HTML,CSS,JS",
+    github: "https://github.com/rehanmujawarofficial",
+    live: "https://gypsum1.netlify.app/",
+  },
 ];
 
 const Portfolio = () => {
