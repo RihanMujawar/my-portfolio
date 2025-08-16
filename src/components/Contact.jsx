@@ -45,7 +45,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <div className="icon"><i className="fas fa-envelope"></i><span>Email</span></div>
-                <p>: rehanmujawarofficial007@gmail.com</p>
+                <p>: rehan.learnig@gmail.com</p>
               </div>
               <div className="contact-item">
                 <div className="icon"><i className="fas fa-user-graduate"></i><span>Education</span></div>
@@ -65,7 +65,7 @@ const Contact = () => {
                 <a href="https://twitter.com" target="_blank" rel="noreferrer">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="https://github.com/rehanmujawarofficial" target="_blank" rel="noreferrer">
+                <a href="https://github.com/RihanMujawar" target="_blank" rel="noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 <a href="https://www.instagram.com/r_k_thunder_007/" target="_blank" rel="noreferrer">

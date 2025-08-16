@@ -48,6 +48,7 @@ const About = () => {
             { skill: 'Python', percent: '70%', className: 'python' },
             { skill: 'Java', percent: '65%', className: 'java' },
             { skill: 'MySQL', percent: '60%', className: 'mysql' },
+            { skill: 'AWS database', percent: '80%', className: 'AWS' },
             { skill: 'NodeJS', percent: 'learning', className: 'node' },
             { skill: 'MongoDB', percent: 'learning', className: 'mongodb' },
           ].map((item, index) => (
@@ -75,7 +76,7 @@ const About = () => {
     {
       year: '2024 - 2025',
       degree: 'Second year',
-      school: 'completed with 8.9 CGPA'
+      school: 'completed with 8.7 CGPA'
     },
     {
       year: '2023 - 2024',
