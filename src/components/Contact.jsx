@@ -9,13 +9,19 @@ const Contact = () => {
     const form = e.target;
     const data = new FormData(form);
 
-    const response = await fetch('https://formspree.io/f/xgvkobgy', {
-      method: 'POST',
-      body: data,
-      headers: {
-        Accept: 'application/json',
-      },
-    });
+const response = await fetch("https://formspree.io/f/xgvkobgy", {
+  method: "POST",
+  headers: {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+  }),
+});
+
 
     if (response.ok) {
       setStatus('SUCCESS');
