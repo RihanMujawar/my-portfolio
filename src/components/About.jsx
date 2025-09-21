@@ -64,6 +64,60 @@ const About = () => {
           ))}
         </div>
       </div>
+    
+
+      {/* Certificates Section */}
+<h4 className="stat-title">My Certificates</h4>
+<div className="certificates-grid">
+  {[
+    {
+      title: 'Generative AI Mastery Workshop',
+      provider: 'OpenAI academy / NXT WAVE',
+      year: '2025',
+      img: '/cert/openai.png'
+    },
+    {
+      title: 'Innovation Desain Thinking',
+      provider: 'IBM',
+      year: '2024',
+      img: '/cert/ibm.png'
+    },
+    {
+      title: 'React',
+      provider: 'Infosys',
+      year: '2025',
+      img: '/cert/react.png'
+    },
+    {
+      title: 'Java Scrpt',
+      provider: 'Infosys',
+      year: '2025',
+      img: '/cert/js.png'
+    },
+    {
+      title: 'CSS3',
+      provider: 'Infosys',
+      year: '2025',
+      img: '/cert/css.png'
+    },
+    {
+      title: 'HTML5',
+      provider: 'Infosys',
+      year: '2025',
+      img: '/cert/html.png'
+    }
+  ].map((cert, index) => (
+    <div className="certificate-card" key={index}>
+      <img src={cert.img} alt={cert.title} />
+      <div className="certificate-overlay">
+        <h5>{cert.title}</h5>
+        <p>{cert.provider}</p>
+        <p>{cert.year}</p>
+      </div>
+    </div>
+  ))}
+</div>
+{/* Education Section */}
 
       <h4 className="stat-title">My Education</h4>
 <div className="timeline">
@@ -105,6 +159,18 @@ const About = () => {
       <h4 className="stat-title">My Timeline</h4>
       <div className="timeline">
         {[
+          { date: '2022 - present', title: 'Web Developer', place: 'projects', about: 'When i started learning web development in a college i will created a lot of projecs' },
+        ].map((item, index) => (
+          <div className="timeline-item" key={index}>
+            <div className="tl-icon">
+              <i className="fas fa-briefcase"></i>
+            </div>
+            <p className="tl-duration">{item.date}</p>
+            <h5>{item.title}<span> - {item.place}</span></h5>
+            <p>{item.about}</p>
+          </div>
+        ))},
+                {[
           { date: '2022 - present', title: 'Web Developer', place: 'projects', about: 'When i started learning web development in a college i will created a lot of projecs' },
         ].map((item, index) => (
           <div className="timeline-item" key={index}>
