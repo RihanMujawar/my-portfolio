@@ -88,6 +88,7 @@ const Contact = () => {
               name="contact"
               method="POST"
               data-netlify="true"
+              action="/thanks"  // optional thank you page
               className="contact-form"
             >
               {/* ✅ Netlify hidden input */}
