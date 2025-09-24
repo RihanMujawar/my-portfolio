@@ -10,6 +10,20 @@ const projects = [
     live: "https://rehan07.netlify.app/",
   },
   {
+    title: "Easywith Me",
+    image: "img/phase7.png",
+    tech: "HTML,CSS,JS",
+    github: "https://github.com/RihanMujawar/easywithme",
+    live: "https://easywithme.netlify.app/",
+  },
+  {
+    title: "pop works site",
+    image: "img/phase6.png",
+    tech: "HTML,CSS,JS",
+    github: "https://github.com/RihanMujawar",
+    live: "https://gypsum1.netlify.app/",
+  },
+  {
     title: "College website",
     tech: "HTML/CSS/JS",
     image: "img/pro1.png",
@@ -37,19 +51,13 @@ const projects = [
     live: "https://flythebird.netlify.app/",
   },
   {
-    title: "pop works site",
-    image: "img/phase6.png",
-    tech: "HTML,CSS,JS",
-    github: "https://github.com/RihanMujawar",
-    live: "https://gypsum1.netlify.app/",
+    title: "Coude based voting",
+    image: "projects/voting.png",
+    tech: "React,firestore DB",
+    github: "https://github.com/RihanMujawar/cloude-projrct",
+    live: "https://onlainvoting.netlify.app/",
   },
-  {
-    title: "Easywith Me",
-    image: "img/phase7.png",
-    tech: "HTML,CSS,JS",
-    github: "https://github.com/RihanMujawar/easywithme",
-    live: "https://easywithme.netlify.app/",
-  },
+
 ];
 
 const Portfolio = () => {
