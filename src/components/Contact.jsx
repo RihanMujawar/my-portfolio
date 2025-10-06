@@ -100,7 +100,7 @@ const Contact = () => {
               {/* ✅ Status message */}
               {status === 'SUCCESS' && (
                 <p style={{ color: 'limegreen', marginTop: '1rem' }}>
-                  ✅ Message sent successfully!
+                  Message sent successfully!
                 </p>
               )}
               {status === 'ERROR' && (

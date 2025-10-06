@@ -543,6 +543,7 @@ section {
 
 .portfolios .portfolio-item:hover .project-desc {
   max-height: 120px;
+  border-radius: 25px;
   opacity: 0.9;
   transform: translateY(0);
 }
