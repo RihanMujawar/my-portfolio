@@ -21,8 +21,8 @@ const Header = () => {
             I love to create beautiful, functional and user-friendly websites. 
           </p>
           <div className="btn-con">
-          <a href="/Rehan.pdf" download className="main-btn">
-            <span className="btn-text">Download Resume</span>
+          <a href="/CV.pdf" download className="main-btn">
+            <span className="btn-text">Download CV</span>
             <span className="btn-icon"><i className="fas fa-download"></i></span>
           </a>
           </div>
