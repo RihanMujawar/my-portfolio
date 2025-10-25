@@ -42,15 +42,14 @@ const About = () => {
             { skill: 'HTML', percent: '75%', className: 'html' },
             { skill: 'CSS', percent: '80%', className: 'css' },
             { skill: 'Bootstrap', percent: '85%', className: 'bootstrap'},
-            { skill: 'JavaScript', percent: '60%', className: 'js' },
-            { skill: 'php', percent: '85%', className: 'bootstrap' },
-            { skill: 'ReactJS', percent: '70%', className: 'react' },
-            { skill: 'Python', percent: '70%', className: 'python' },
-            { skill: 'Java', percent: '65%', className: 'java' },
-            { skill: 'MySQL', percent: '60%', className: 'mysql' },
-            { skill: 'AWS database', percent: '80%', className: 'AWS' },
-            { skill: 'NodeJS', percent: 'learning', className: 'node' },
-            { skill: 'MongoDB', percent: 'learning', className: 'mongodb' },
+            { skill: 'JavaScript', percent: '61%', className: 'js' },
+            { skill: 'ReactJS', percent: '69%', className: 'react' },
+            { skill: 'Python', percent: '77%', className: 'python' },
+            { skill: 'Java', percent: '55%', className: 'java' },
+            { skill: 'MySQL', percent: '66%', className: 'mysql' },
+            { skill: 'AWS services ', percent: '87%', className: 'AWS' },
+            { skill: 'NodeJS', percent: '72%', className: 'node' },
+            { skill: 'MongoDB', percent: '84%', className: 'mongodb' },
           ].map((item, index) => (
             <div className="progress-bar" key={index}>
               <p className="prog-title">{item.skill}</p>
@@ -169,8 +168,8 @@ const About = () => {
             <h5>{item.title}<span> - {item.place}</span></h5>
             <p>{item.about}</p>
           </div>
-        ))},
-                {[
+        ))}
+        {[
           { date: '2022 - present', title: 'Web Developer', place: 'projects', about: 'When i started learning web development in a college i will created a lot of projecs' },
         ].map((item, index) => (
           <div className="timeline-item" key={index}>
