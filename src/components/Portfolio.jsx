@@ -1,4 +1,4 @@
-// src/components/Portfolio.jsx
+
 import React from 'react';
 
 const projects = [
