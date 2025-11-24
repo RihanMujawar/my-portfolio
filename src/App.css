@@ -174,6 +174,49 @@ section {
   z-index: -1;
   clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
+
+/* Security Icons in Hero Section */
+.security-icons {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 0;
+  opacity: 0.2;
+  font-size: 3rem;
+  color: var(--color-white);
+}
+
+.security-icons i {
+  position: absolute;
+  animation: float 6s infinite ease-in-out;
+}
+
+.security-icons i:nth-child(1) {
+  top: 0;
+  left: 0;
+  animation-delay: 0s;
+}
+
+.security-icons i:nth-child(2) {
+  top: 50px;
+  left: 80px;
+  animation-delay: 1s;
+}
+
+.security-icons i:nth-child(3) {
+  top: 100px;
+  left: 30px;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   height: 80%;
@@ -181,6 +224,8 @@ section {
   margin-left: 4rem;
   background-color: var(--color-black);
   transition: all 0.4s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 .header-content .left-header .image img {
   width: 100%;
@@ -204,9 +249,60 @@ section {
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
+
+/* Animated text in hero section */
+.animated-text {
+  height: 3rem;
+  overflow: hidden;
+  position: relative;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.animated-text .role {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  animation: rollText 6s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes rollText {
+  0%, 20% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  30%, 50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70%, 100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.animated-text .role:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animated-text .role:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.animated-text .role:nth-child(3) {
+  animation-delay: 4s;
+}
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+  font-size: 1.2rem;
+  max-width: 90%;
 }
 
 /*About*/
@@ -302,6 +398,8 @@ section {
   background-color: var(--color-grey-4);
   margin-left: 1rem;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
@@ -310,80 +408,73 @@ section {
   height: 100%;
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
-  width: 60%;
+  width: 0;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 75%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 80%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .bootstrap {
-  width: 85%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 61%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 69%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 77%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 55%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .mysql {
-  width: 66%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .AWS {
-  width: 87%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 72%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
-  width: 84%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .linuxsec {
-  width: 82%;
+/* Skill Categories Filter */
+.skills-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .nmap {
-  width: 78%;
+.skill-category {
+  background-color: var(--color-grey-5);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .burp {
-  width: 74%;
+.skill-category:hover {
+  background-color: var(--color-secondary);
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .wireshark {
-  width: 71%;
+.skill-category.active {
+  background-color: var(--color-secondary);
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .osint {
-  width: 80%;
+.progress-bar.dev,
+.progress-bar.security,
+.progress-bar.networking {
+  display: none;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .networking{
-  width: 76%;
+.progress-bar.dev.show,
+.progress-bar.security.show,
+.progress-bar.networking.show {
+  display: flex;
+  flex-direction: column;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .pentest {
-  width: 73%;
+/* Progress bar animations */
+.progress-bar {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.5s forwards;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .netanalysis {
-  width: 70%;
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .reverse {
-  width: 62%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .vuln {
-  width: 75%;
-}
+.progress-bar:nth-child(1) { animation-delay: 0.1s; }
+.progress-bar:nth-child(2) { animation-delay: 0.2s; }
+.progress-bar:nth-child(3) { animation-delay: 0.3s; }
+.progress-bar:nth-child(4) { animation-delay: 0.4s; }
+.progress-bar:nth-child(5) { animation-delay: 0.5s; }
+.progress-bar:nth-child(6) { animation-delay: 0.6s; }
+.progress-bar:nth-child(7) { animation-delay: 0.7s; }
+.progress-bar:nth-child(8) { animation-delay: 0.8s; }
+.progress-bar:nth-child(9) { animation-delay: 0.9s; }
+.progress-bar:nth-child(10) { animation-delay: 1.0s; }
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -458,6 +549,24 @@ section {
   text-align: center;
 }
 
+.portfolio-blurb {
+  text-align: center;
+  max-width: 800px;
+  margin: 1rem auto 3rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(39, 174, 96, 0.05));
+  border: 1px solid var(--color-secondary);
+}
+
+.portfolio-blurb p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--color-white);
+  margin: 0;
+  font-style: italic;
+}
+
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -515,12 +624,29 @@ section {
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
+.portfolios .portfolio-item .hover-items .project-details {
+  text-align: left;
+  margin: 0.5rem 0;
+  width: 80%;
+}
+
+.portfolios .portfolio-item .hover-items .project-details p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--color-white);
+}
+
+.portfolios .portfolio-item .hover-items .project-details .tech-stack {
+  font-weight: bold;
+}
+
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0.5rem;
 }
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
@@ -615,6 +741,7 @@ section {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
+  color: var(--color-secondary);
 }
 .contact-content-con .left-contact p {
   margin: 1rem 0;
@@ -726,6 +853,40 @@ section {
   justify-content: center;
   border-radius: 50%;
   padding: 1rem;
+}
+
+.main-btn.hire-me {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.main-btn.hire-me .btn-text {
+  padding: 0 2rem;
+}
+
+.main-btn.hire-me .btn-icon {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.main-btn.contact-btn {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  color: var(--color-white);
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+}
+
+.main-btn.contact-btn .btn-text {
+  padding: 0 1.5rem;
+}
+
+.main-btn.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .main-btn::before {
   content: "";

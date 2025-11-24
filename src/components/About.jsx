@@ -1,7 +1,42 @@
 // src/components/About.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const About = () => {
+  useEffect(() => {
+    const skillCategories = document.querySelectorAll('.skill-category');
+    const progressBars = document.querySelectorAll('.progress-bar');
+    
+    // Initialize all progress bars with animation
+    progressBars.forEach((bar, index) => {
+      setTimeout(() => {
+        bar.classList.add('show');
+      }, 100 * index);
+    });
+    
+    skillCategories.forEach(category => {
+      category.addEventListener('click', () => {
+        // Update active category
+        skillCategories.forEach(cat => cat.classList.remove('active'));
+        category.classList.add('active');
+        
+        const selectedCategory = category.dataset.category;
+        
+        // Show/hide progress bars based on category
+        progressBars.forEach(bar => {
+          if (selectedCategory === 'all') {
+            bar.style.display = 'flex';
+          } else {
+            if (bar.classList.contains(selectedCategory)) {
+              bar.style.display = 'flex';
+            } else {
+              bar.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  }, []);
+  
   return (
     <section className="container about" id="about">
       <div className="main-title">
@@ -38,38 +73,44 @@ const About = () => {
       {/* Skills Section */}
       <div className="about-stats">
         <h4 className="stat-title">My Skills</h4>
+        <div className="skills-categories">
+          <button className="skill-category active" data-category="all">All Skills</button>
+          <button className="skill-category" data-category="dev">Development</button>
+          <button className="skill-category" data-category="security">Security</button>
+          <button className="skill-category" data-category="networking">Networking</button>
+        </div>
         <div className="progress-bars">
           {[
-            { skill: 'HTML', percent: '75%', className: 'html' },
-            { skill: 'CSS', percent: '80%', className: 'css' },
-            { skill: 'Bootstrap', percent: '85%', className: 'bootstrap' },
-            { skill: 'JavaScript', percent: '61%', className: 'js' },
-            { skill: 'ReactJS', percent: '69%', className: 'react' },
-            { skill: 'Python', percent: '77%', className: 'python' },
-            { skill: 'Java', percent: '55%', className: 'java' },
-            { skill: 'MySQL', percent: '66%', className: 'mysql' },
-            { skill: 'AWS Services', percent: '87%', className: 'aws' },
-            { skill: 'NodeJS', percent: '72%', className: 'node' },
-            { skill: 'MongoDB', percent: '84%', className: 'mongodb' },
+            { skill: 'HTML', percent: '75%', className: 'html', category: 'dev' },
+            { skill: 'CSS', percent: '80%', className: 'css', category: 'dev' },
+            { skill: 'Bootstrap', percent: '85%', className: 'bootstrap', category: 'dev' },
+            { skill: 'JavaScript', percent: '61%', className: 'js', category: 'dev' },
+            { skill: 'ReactJS', percent: '69%', className: 'react', category: 'dev' },
+            { skill: 'Python', percent: '77%', className: 'python', category: 'dev' },
+            { skill: 'Java', percent: '55%', className: 'java', category: 'dev' },
+            { skill: 'MySQL', percent: '66%', className: 'mysql', category: 'dev' },
+            { skill: 'AWS Services', percent: '87%', className: 'aws', category: 'dev' },
+            { skill: 'NodeJS', percent: '72%', className: 'node', category: 'dev' },
+            { skill: 'MongoDB', percent: '84%', className: 'mongodb', category: 'dev' },
             // Cybersecurity Skills
-            { skill: 'Linux Security Tools', percent: '82%', className: 'linuxsec' },
-            { skill: 'Nmap', percent: '78%', className: 'nmap' },
-            { skill: 'Burp Suite', percent: '74%', className: 'burp' },
-            { skill: 'Wireshark', percent: '71%', className: 'wireshark' },
-            { skill: 'OSINT Tools', percent: '80%', className: 'osint' },
+            { skill: 'Security Tools', percent: '82%', className: 'linuxsec', category: 'security' },
+            { skill: 'Network Scanning', percent: '78%', className: 'nmap', category: 'security' },
+            { skill: 'Web App Testing', percent: '74%', className: 'burp', category: 'security' },
+            { skill: 'Traffic Analysis', percent: '71%', className: 'wireshark', category: 'security' },
+            { skill: 'Digital Investigation', percent: '80%', className: 'osint', category: 'security' },
             // Networking & Security Engineering
-            { skill: 'Computer Networking', percent: '76%', className: 'networking' },
-            { skill: 'Penetration Testing Fundamentals', percent: '73%', className: 'pentest' },
-            { skill: 'Network Analysis', percent: '70%', className: 'netanalysis' },
-            { skill: 'Reverse Engineering Basics', percent: '62%', className: 'reverse' },
-            { skill: 'Vulnerability Assessment', percent: '75%', className: 'vuln' }
+            { skill: 'Computer Networking', percent: '76%', className: 'networking', category: 'networking' },
+            { skill: 'Penetration Testing', percent: '73%', className: 'pentest', category: 'security' },
+            { skill: 'Network Analysis', percent: '70%', className: 'netanalysis', category: 'networking' },
+            { skill: 'System Analysis', percent: '62%', className: 'reverse', category: 'security' },
+            { skill: 'Vulnerability Assessment', percent: '75%', className: 'vuln', category: 'security' }
           ].map((item, index) => (
-            <div className="progress-bar" key={index}>
+            <div className={`progress-bar ${item.category}`} key={index}>
               <p className="prog-title">{item.skill}</p>
               <div className="progress-con">
                 <p className="prog-text">{item.percent}</p>
                 <div className="progress">
-                  <span className={item.className}></span>
+                  <span className={item.className} style={{width: item.percent}}></span>
                 </div>
               </div>
             </div>
@@ -79,7 +120,7 @@ const About = () => {
     
 
       {/* Certificates Section */}
-<h4 className="stat-title">My Certificates</h4>
+      <h4 className="stat-title">My Certificates</h4>
 <div className="certificates-grid">
   {[
     {

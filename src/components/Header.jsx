@@ -7,29 +7,37 @@ const Header = () => {
       <div className="header-content">
         <div className="left-header">
           <div className="h-shape"></div>
+          <div className="security-icons">
+            <i className="fas fa-shield-alt"></i>
+            <i className="fas fa-lock"></i>
+            <i className="fas fa-code"></i>
+          </div>
           <div className="image">
             <img src="cert/hero.png" alt="hero" />
           </div>
         </div>
         <div className="right-header">
           <h1 className="name">
-            Hi, I'm <span>Rehan mujawar.</span> Full Stack Developer & Cybersecurity Enthusiast.
+            Hi, I'm <span>Rehan Mujawar.</span>
           </h1>
+          <div className="animated-text">
+            <span className="role">Full Stack Developer</span>
+            <span className="role">Cybersecurity Enthusiast</span>
+            <span className="role">UI/UX Designer</span>
+          </div>
           <p>
-            I develop modern, secure, 
-            and scalable web applications with a strong focus on performance and user experience, 
-            combining clean UI work with solid security practices. My technical stack includes HTML, CSS, 
-            JavaScript, React, Node.js, and MongoDB, along with experience using security tools such as Nmap,
-            Burp Suite, Wireshark, and OSINT methods. I also explore networking,
-            penetration-testing fundamentals, and basic reverse-engineering concepts, 
-            which helps me create systems that are efficient, polished, and resilient against real-world security challenges.
-            and resilient against real-world security challenges.
+            I build elegant digital solutions that combine stunning user experiences with rock-solid security.
+            From sleek frontends to secure backends, I deliver full-circle solutions that matter.
           </p>
           <div className="btn-con">
-          <a href="/rehan-CV.pdf" download className="main-btn">
-            <span className="btn-text">Download CV</span>
-            <span className="btn-icon"><i className="fas fa-download"></i></span>
-          </a>
+            <a href="/rehan-CV.pdf" download className="main-btn">
+              <span className="btn-text">Download CV</span>
+              <span className="btn-icon"><i className="fas fa-download"></i></span>
+            </a>
+            <a href="#contact" className="main-btn hire-me">
+              <span className="btn-text">Hire Me</span>
+              <span className="btn-icon"><i className="fas fa-paper-plane"></i></span>
+            </a>
           </div>
         </div>
       </div>

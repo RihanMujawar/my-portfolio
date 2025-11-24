@@ -40,9 +40,9 @@ const Contact = () => {
         <div className="contact-content-con">
           {/* Left Side */}
           <div className="left-contact">
-            <h4>Contact me here</h4>
+            <h4>Let's build something secure together</h4>
             <p>
-              Got a project in mind or just want to say hi? Let’s turn your vision into code.
+              Got a project in mind? Let's talk about building secure, scalable applications that stand the test of time.
             </p>
             <div className="contact-info">
               <div className="contact-item">
@@ -95,8 +95,8 @@ const Contact = () => {
                 <textarea name="message" rows="8" placeholder="Message Here..." required></textarea>
               </div>
               <div className="submit-btn">
-                <button type="submit" className="main-btn" disabled={loading}>
-                  <span className="btn-text">{loading ? "Sending..." : "Submit"}</span>
+                <button type="submit" className="main-btn contact-btn" disabled={loading}>
+                  <span className="btn-text">{loading ? "Sending..." : "Let's Connect"}</span>
                   <span className="btn-icon"><i className="fas fa-paper-plane"></i></span>
                 </button>
               </div>
