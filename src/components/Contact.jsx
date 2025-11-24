@@ -77,6 +77,9 @@ const Contact = () => {
                 <a href="https://www.instagram.com/sudo_rehan/" target="_blank" rel="noreferrer">
                   <i className="fab fa-instagram"></i>
                 </a>
+                <a href="https://www.linkedin.com/in/rehan-i-mujawar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
+                  <i className="fab fa-linkedin"></i>
+                </a>
               </div>
             </div>
           </div>
