@@ -88,8 +88,8 @@ const Contact = () => {
           <div className="right-contact">
             <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
               <div className="input-control i-c-2">
-                <input type="text" name="name" required placeholder="YOUR NAME" />
-                <input type="email" name="email" required placeholder="YOUR EMAIL" />
+                <input type="text" name="name" required placeholder="Your Name" />
+                <input type="email" name="email" required placeholder="Your Email" />
               </div>
               <div className="input-control">
                 <textarea name="message" rows="8" placeholder="Message Here..." required></textarea>
