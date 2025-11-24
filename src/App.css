@@ -365,7 +365,25 @@ section {
   width: 80%;
 }
 
+.about-stats .progress-bars .progress-bar .progress-con .progress .networking{
+  width: 76%;
+}
 
+.about-stats .progress-bars .progress-bar .progress-con .progress .pentest {
+  width: 73%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .netanalysis {
+  width: 70%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .reverse {
+  width: 62%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .vuln {
+  width: 75%;
+}
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;

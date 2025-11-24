@@ -11,11 +11,12 @@ const About = () => {
         <div className="left-about">
           <h4>Information About me</h4>
           <p>
-            I'm Rehan Mujawar, a dedicated Full Stack Developer and Cybersecurity Enthusiast.
-            I work with technologies like JavaScript, React, Node.js, and MongoDB to build clean, responsive, and user-focused web applications.
-            My focus is on creating intuitive, user-friendly interfaces that enhance the overall user experience. I also have a strong interest in cybersecurity, and I actively explore and implement security best practices in my projects.
-            Alongside development, I actively explore cybersecurity tools and techniques, strengthening my ability to create secure and reliable digital solutions. I enjoy turning ideas into functional products that deliver great user experiences while maintaining strong security and performance.
-          </p>
+            I'm Rehan Mujawar, a Full Stack Developer and Cybersecurity Enthusiast. 
+            I work with JavaScript, React, Node.js, and MongoDB to build clean, responsive applications,
+            while applying security best practices to keep them reliable and safe. 
+            I enjoy creating smooth user experiences and exploring security tools and techniques 
+            that help me build stronger, more resilient digital solutions.
+           </p>
         </div>
         <div className="right-about">
           {[
@@ -50,14 +51,18 @@ const About = () => {
             { skill: 'AWS Services', percent: '87%', className: 'aws' },
             { skill: 'NodeJS', percent: '72%', className: 'node' },
             { skill: 'MongoDB', percent: '84%', className: 'mongodb' },
-
             // Cybersecurity Skills
             { skill: 'Linux Security Tools', percent: '82%', className: 'linuxsec' },
             { skill: 'Nmap', percent: '78%', className: 'nmap' },
             { skill: 'Burp Suite', percent: '74%', className: 'burp' },
             { skill: 'Wireshark', percent: '71%', className: 'wireshark' },
-            { skill: 'OSINT Tools', percent: '80%', className: 'osint' }
-            
+            { skill: 'OSINT Tools', percent: '80%', className: 'osint' },
+            // Networking & Security Engineering
+            { skill: 'Computer Networking', percent: '76%', className: 'networking' },
+            { skill: 'Penetration Testing Fundamentals', percent: '73%', className: 'pentest' },
+            { skill: 'Network Analysis', percent: '70%', className: 'netanalysis' },
+            { skill: 'Reverse Engineering Basics', percent: '62%', className: 'reverse' },
+            { skill: 'Vulnerability Assessment', percent: '75%', className: 'vuln' }
           ].map((item, index) => (
             <div className="progress-bar" key={index}>
               <p className="prog-title">{item.skill}</p>

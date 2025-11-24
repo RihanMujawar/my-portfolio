@@ -16,11 +16,14 @@ const Header = () => {
             Hi, I'm <span>Rehan mujawar.</span> Full Stack Developer & Cybersecurity Enthusiast.
           </h1>
           <p>
-            I build modern, secure and scalable web applications.
-            My work blends clean UI development with strong security practices to ensure safe, high-performance digital experiences.
-
-            I work with technologies like HTML, CSS, JavaScript, React, Node.js and MongoDB — along with security tools like Nmap, Burp Suite, Wireshark and OSINT techniques.
-            I enjoy creating systems that not only look good and run smoothly, but also stay protected in real-world conditions.
+            I develop modern, secure, 
+            and scalable web applications with a strong focus on performance and user experience, 
+            combining clean UI work with solid security practices. My technical stack includes HTML, CSS, 
+            JavaScript, React, Node.js, and MongoDB, along with experience using security tools such as Nmap,
+            Burp Suite, Wireshark, and OSINT methods. I also explore networking,
+            penetration-testing fundamentals, and basic reverse-engineering concepts, 
+            which helps me create systems that are efficient, polished, and resilient against real-world security challenges.
+            and resilient against real-world security challenges.
           </p>
           <div className="btn-con">
           <a href="/rehan-CV.pdf" download className="main-btn">
