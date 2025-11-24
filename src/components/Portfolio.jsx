@@ -19,14 +19,6 @@ const projects = [
     desc: "Responsive landing site built with vanilla HTML, CSS and JavaScript.",
   },
   {
-    title: "RegeneraX",
-    image: "img/phase7.png",
-    tech: "React,flash API and python",
-    github: "#",
-    live: "#",
-    desc: "my hackthon project which i created in in IIT dharwad",
-  },
-  {
     title: "pop works site",
     image: "img/phase6.png",
     tech: "HTML,CSS,JS",
