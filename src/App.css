@@ -345,6 +345,26 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
   width: 84%;
 }
+.about-stats .progress-bars .progress-bar .progress-con .progress .linuxsec {
+  width: 82%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .nmap {
+  width: 78%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .burp {
+  width: 74%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .wireshark {
+  width: 71%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .osint {
+  width: 80%;
+}
+
 
 .stat-title {
   text-transform: uppercase;

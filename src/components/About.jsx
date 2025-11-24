@@ -11,18 +11,18 @@ const About = () => {
         <div className="left-about">
           <h4>Information About me</h4>
           <p>
-          I'm Rehan Mujawar,
-          a passionate Full Stack Developer 
-          skilled in HTML, CSS, JavaScript, React, Node.js, MongoDB and etc, 
-          creating functional, beautiful websites with a focus on user experience.
+            I'm Rehan Mujawar, a dedicated Full Stack Developer and Cybersecurity Enthusiast.
+            I work with technologies like JavaScript, React, Node.js, and MongoDB to build clean, responsive, and user-focused web applications.
+            My focus is on creating intuitive, user-friendly interfaces that enhance the overall user experience. I also have a strong interest in cybersecurity, and I actively explore and implement security best practices in my projects.
+            Alongside development, I actively explore cybersecurity tools and techniques, strengthening my ability to create secure and reliable digital solutions. I enjoy turning ideas into functional products that deliver great user experiences while maintaining strong security and performance.
           </p>
         </div>
         <div className="right-about">
           {[
             { number: '100+', label: 'mini Projects' },
             { number: '2+', label: 'Years of Experience' },
-            { number: '5', label: 'Real world Projects' },
-            { number: '2', label: 'live hosted Projects' }
+            { number: '7', label: 'Real world Projects' },
+            { number: '5+', label: 'live hosted Projects' }
           ].map((item, index) => (
             <div className="about-item" key={index}>
               <div className="abt-text">
@@ -41,15 +41,23 @@ const About = () => {
           {[
             { skill: 'HTML', percent: '75%', className: 'html' },
             { skill: 'CSS', percent: '80%', className: 'css' },
-            { skill: 'Bootstrap', percent: '85%', className: 'bootstrap'},
+            { skill: 'Bootstrap', percent: '85%', className: 'bootstrap' },
             { skill: 'JavaScript', percent: '61%', className: 'js' },
             { skill: 'ReactJS', percent: '69%', className: 'react' },
             { skill: 'Python', percent: '77%', className: 'python' },
             { skill: 'Java', percent: '55%', className: 'java' },
             { skill: 'MySQL', percent: '66%', className: 'mysql' },
-            { skill: 'AWS services ', percent: '87%', className: 'AWS' },
+            { skill: 'AWS Services', percent: '87%', className: 'aws' },
             { skill: 'NodeJS', percent: '72%', className: 'node' },
             { skill: 'MongoDB', percent: '84%', className: 'mongodb' },
+
+            // Cybersecurity Skills
+            { skill: 'Linux Security Tools', percent: '82%', className: 'linuxsec' },
+            { skill: 'Nmap', percent: '78%', className: 'nmap' },
+            { skill: 'Burp Suite', percent: '74%', className: 'burp' },
+            { skill: 'Wireshark', percent: '71%', className: 'wireshark' },
+            { skill: 'OSINT Tools', percent: '80%', className: 'osint' }
+            
           ].map((item, index) => (
             <div className="progress-bar" key={index}>
               <p className="prog-title">{item.skill}</p>
@@ -82,6 +90,12 @@ const About = () => {
       img: '/cert/ibm.png'
     },
     {
+      title: 'Cybersecurity analysis',
+      provider: 'TATA',
+      year: '2025',
+      img: '/cert/cyber.jpeg'
+    },
+    {
       title: 'React',
       provider: 'Infosys',
       year: '2025',
@@ -92,12 +106,6 @@ const About = () => {
       provider: 'Infosys',
       year: '2025',
       img: '/cert/js.png'
-    },
-    {
-      title: 'CSS3',
-      provider: 'Infosys',
-      year: '2025',
-      img: '/cert/css.png'
     },
     {
       title: 'HTML5',

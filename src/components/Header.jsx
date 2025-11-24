@@ -13,12 +13,14 @@ const Header = () => {
         </div>
         <div className="right-header">
           <h1 className="name">
-            Hi, I'm <span>Rehan mujawar.</span> A Full Stack Developer.
+            Hi, I'm <span>Rehan mujawar.</span> Full Stack Developer & Cybersecurity Enthusiast.
           </h1>
           <p>
-            I am a Full Stack Developer with a strong interest in building websites and web applications. 
-            I have learned technologies like HTML, CSS, JavaScript, React, Node.js, MongoDB and etc . 
-            I love to create beautiful, functional and user-friendly websites. 
+            I build modern, secure and scalable web applications.
+            My work blends clean UI development with strong security practices to ensure safe, high-performance digital experiences.
+
+            I work with technologies like HTML, CSS, JavaScript, React, Node.js and MongoDB — along with security tools like Nmap, Burp Suite, Wireshark and OSINT techniques.
+            I enjoy creating systems that not only look good and run smoothly, but also stay protected in real-world conditions.
           </p>
           <div className="btn-con">
           <a href="/rehan-CV.pdf" download className="main-btn">
