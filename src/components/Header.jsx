@@ -36,10 +36,6 @@ const Header = () => {
               <span className="btn-text">Download CV</span>
               <span className="btn-icon"><i className="fas fa-download"></i></span>
             </a>
-            <a href="#contact" className="main-btn hire-me">
-              <span className="btn-text">Hire Me</span>
-              <span className="btn-icon"><i className="fas fa-paper-plane"></i></span>
-            </a>
           </div>
         </div>
       </div>
