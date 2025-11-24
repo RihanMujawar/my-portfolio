@@ -293,6 +293,7 @@ section {
 
 .animated-text .role:nth-child(2) {
   animation-delay: 2s;
+  font-size: 1.5rem;
 }
 
 .animated-text .role:nth-child(3) {
